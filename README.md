@@ -30,3 +30,16 @@ Click the VM icon in the bar to open the panel. Running VMs show their IP, RAM a
 ## Sudoers
 
 No sudo required — uses `qemu:///system` via libvirt directly.
+
+## Removal
+
+```bash
+omarchy plugin disable dix.qemu
+omarchy plugin remove dix.qemu
+```
+
+## Dependencies
+
+- `qemu` and `libvirt` installed and running
+- User must be in the `libvirt` group: `sudo usermod -aG libvirt $USER`
+- `virt-manager` for console access
