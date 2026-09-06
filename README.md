@@ -1,5 +1,7 @@
 # omarchy-qemu-plugin
 
+![Preview](preview.png)
+
 QEMU/libvirt VM manager widget for Omarchy. Monitor and control your virtual machines directly from the bar.
 
 ## Features
