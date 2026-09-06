@@ -20,7 +20,7 @@ QEMU/libvirt VM manager widget for Omarchy. Monitor and control your virtual mac
 ## Installation
 
 ```bash
-omarchy plugin add https://github.com/YOUR_USERNAME/omarchy-qemu-plugin.git --enable
+omarchy plugin add https://github.com/pacman-vzla/omarchy-qemu-plugin.git --enable
 ```
 
 ## Usage
