@@ -126,6 +126,7 @@ Panel {
 
                   Text {
                     text: modelData.name
+		    textFormat: Text.PlainText
                     color: root.foreground
                     font.family: root.fontFamily
                     font.pixelSize: Style.font.body
@@ -136,6 +137,7 @@ Panel {
 
                   Text {
                     text: isRunning ? "Corriendo" : "Detenida"
+		    textFormat: Text.PlainText
                     color: isRunning ? "#50fa7b" : root.dim
                     font.family: root.fontFamily
                     font.pixelSize: Style.font.caption
@@ -153,6 +155,7 @@ Panel {
                   Text {
                     anchors.centerIn: parent
                     text: isRunning ? "Apagar" : "Iniciar"
+		    textFormat: Text.PlainText
                     color: isRunning ? "#ff5555" : "#50fa7b"
                     font.family: root.fontFamily
                     font.pixelSize: Style.font.bodySmall
@@ -184,6 +187,7 @@ Panel {
                 Text {
                   visible: modelData.ip !== ""
                   text: "IP: " + modelData.ip
+		  textFormat: Text.PlainText
                   color: root.dim
                   font.family: root.fontFamily
                   font.pixelSize: Style.font.caption
@@ -192,6 +196,7 @@ Panel {
                 Text {
                   visible: modelData.ram !== ""
                   text: "RAM: " + modelData.ram + " / " + modelData.ramTotal + " MB"
+		  textFormat: Text.PlainText
                   color: root.dim
                   font.family: root.fontFamily
                   font.pixelSize: Style.font.caption
@@ -200,6 +205,7 @@ Panel {
                 Text {
                   visible: modelData.disk !== ""
                   text: "Disco: " + modelData.disk + " / " + modelData.diskTotal + " GB"
+		  textFormat: Text.PlainText
                   color: root.dim
                   font.family: root.fontFamily
                   font.pixelSize: Style.font.caption
