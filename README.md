@@ -27,6 +27,21 @@ omarchy plugin add https://github.com/pacman-vzla/omarchy-qemu-plugin.git --enab
 
 Click the VM icon in the bar to open the panel. Running VMs show their IP, RAM and disk usage. Click "Iniciar" to start a VM (opens console automatically) or "Apagar" to shut it down gracefully.
 
+## Localization
+
+The plugin displays text in Spanish by default. To change the language use the included script:
+
+```bash
+# Switch to Spanish
+~/.config/omarchy/plugins/dix.qemu/scripts/set-language es
+
+# Switch back to English
+~/.config/omarchy/plugins/dix.qemu/scripts/set-language en
+```
+
+> Note: if you update the plugin with `omarchy plugin update`, the language will reset to English and you will need to run the script again.
+
+
 ## Sudoers
 
 No sudo required — uses `qemu:///system` via libvirt directly.
